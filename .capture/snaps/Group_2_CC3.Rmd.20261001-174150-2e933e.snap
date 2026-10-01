@@ -169,19 +169,15 @@ nrow(compare_left)
 
 # right
 
-compare_right <- right_join(data1, data2, by = c("ID", "Date"))
-nrow(compare_right)
+compare_right <- right_join(data1, data2, by = c("ID" "Date"))
 
 # full
-
-compare_full <- full_join(data1, data2, by = c("ID", "Date"))
-nrow(compare_full)
 
 ```
 
 **Question 3:** The four numbers differ. Explain which rows each verb keeps, and what that tells you about samples that are in one file but not the other.
 
-**Answer:** 
+**Answer:**
 
 # Part 3 — Dates, summaries and ordering
 
