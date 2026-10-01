@@ -109,7 +109,6 @@ data3 <- data3 |>
     ) 
 
 names(data2)
-names(data3)
 ```
 
 **Question 2:** What would have happened to these column names if you had joined `data2` and `data3` without renaming? (Try it in the Console if you are not sure.)

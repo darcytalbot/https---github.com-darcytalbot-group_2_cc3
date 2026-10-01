@@ -97,19 +97,7 @@ sum(is.na(data3$PC3))
 
 ```{r rename-columns}
 data2 <- data2 |> 
-    rename(
-        micro_PC1 = PC1,
-        micro_PC2 = PC2
-        ) 
-
-data3 <- data3 |> 
-    rename(
-        urine_PC1 = PC1,
-        urine_PC2 = PC2
-    ) 
-
-names(data2)
-names(data3)
+    rename
 ```
 
 **Question 2:** What would have happened to these column names if you had joined `data2` and `data3` without renaming? (Try it in the Console if you are not sure.)
