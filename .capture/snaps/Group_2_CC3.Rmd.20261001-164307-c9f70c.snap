@@ -86,9 +86,7 @@ data3 <- mutate(data3, across(c(PC1, PC2), as.numeric))
 
 # count the NAs
 sum(is.na(data2$PC1))
-sum(is.na(data2$PC2))
-sum(is.na(data3$PC1))
-sum(is.na(data3$PC3))
+
 ```
 
 ## 5. Rename the measurement columns
