@@ -1,0 +1,17 @@
+{"chunk":null,"ts":"2026-10-01T15:46:20Z","pid":55098,"engine":"r","severity":"warning","render":false,"warning":"## Warning: package ‘ggplot2’ was built under R version 4.5.2"}
+{"chunk":null,"ts":"2026-10-01T15:46:20Z","pid":55098,"engine":"r","severity":"warning","render":false,"warning":"## Warning: package ‘tibble’ was built under R version 4.5.2"}
+{"chunk":null,"ts":"2026-10-01T15:46:20Z","pid":55098,"engine":"r","severity":"warning","render":false,"warning":"## Warning: package ‘tidyr’ was built under R version 4.5.2"}
+{"chunk":null,"ts":"2026-10-01T15:46:20Z","pid":55098,"engine":"r","severity":"warning","render":false,"warning":"## Warning: package ‘readr’ was built under R version 4.5.2"}
+{"chunk":null,"ts":"2026-10-01T15:46:20Z","pid":55098,"engine":"r","severity":"warning","render":false,"warning":"## Warning: package ‘purrr’ was built under R version 4.5.2"}
+{"chunk":null,"ts":"2026-10-01T15:46:20Z","pid":55098,"engine":"r","severity":"warning","render":false,"warning":"## Warning: package ‘dplyr’ was built under R version 4.5.2"}
+{"chunk":null,"ts":"2026-10-01T15:46:20Z","pid":55098,"engine":"r","severity":"warning","render":false,"warning":"## Warning: package ‘lubridate’ was built under R version 4.5.2"}
+{"chunk":null,"ts":"2026-10-01T15:59:41Z","pid":55098,"engine":"r","severity":"warning","render":false,"warning":"## Warning: cannot open file 'Dataset1.csv': No such file or directory"}
+{"chunk":null,"ts":"2026-10-01T15:59:41Z","pid":55098,"engine":"r","severity":"error","render":false,"text":"## Error: cannot open the connection"}
+{"chunk":null,"ts":"2026-10-01T16:00:26Z","pid":55098,"engine":"r","severity":"warning","render":false,"warning":"## Warning: cannot open file 'C:/Users/Documents/biol343/cc3/data/Dataset1.csv': No such file or directory"}
+{"chunk":null,"ts":"2026-10-01T16:00:26Z","pid":55098,"engine":"r","severity":"error","render":false,"text":"## Error: cannot open the connection"}
+{"chunk":null,"ts":"2026-10-01T16:00:40Z","pid":55098,"engine":"r","severity":"warning","render":false,"warning":"## Warning: cannot open file 'C:/Users/darcytalbot/Documents/biol343/cc3/data/Dataset1.csv': No such file or directory"}
+{"chunk":null,"ts":"2026-10-01T16:00:40Z","pid":55098,"engine":"r","severity":"error","render":false,"text":"## Error: cannot open the connection"}
+{"chunk":null,"ts":"2026-10-01T16:03:03Z","pid":55098,"engine":"r","severity":"warning","render":false,"warning":"## Warning: cannot open file 'C:/Users/darcytalbot/Documents/biol343/cc3/data/Dataset1.csv': No such file or directory"}
+{"chunk":null,"ts":"2026-10-01T16:03:03Z","pid":55098,"engine":"r","severity":"error","render":false,"text":"## Error: cannot open the connection"}
+{"chunk":null,"ts":"2026-10-01T16:07:55Z","pid":55098,"engine":"r","severity":"warning","render":false,"warning":"## Warning: cannot open file '/data/Dataset1.csv': No such file or directory"}
+{"chunk":null,"ts":"2026-10-01T16:07:55Z","pid":55098,"engine":"r","severity":"error","render":false,"text":"## Error: cannot open the connection"}
