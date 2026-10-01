@@ -204,14 +204,13 @@ Use `group_by()` and `summarise()` (Chapter 10, *summarise() + group_by()*) to c
 
 ```{r year-summary}
 
-year_summary <- group_by(all_data,Year)
-summarise(year_summary, Mean=mean(Conc, na.rm = TRUE), SD=sd(Conc, na.rm = TRUE))
+year_summary <- 
 
 ```
 
 **Question 4:** Does concentration differ between the two years? Answer in one or two sentences from the table.
 
-**Answer:** Concentration differes greatly between 2021 and 2022, with a 9.236 increase.
+**Answer:**
 
 ## 11. The five highest concentrations
 

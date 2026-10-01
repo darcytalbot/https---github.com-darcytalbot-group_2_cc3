@@ -181,7 +181,7 @@ nrow(compare_full)
 
 **Question 3:** The four numbers differ. Explain which rows each verb keeps, and what that tells you about samples that are in one file but not the other.
 
-**Answer:** Inner join keeps the rows that are the same in both data1 and data2 and samples that are in one file and not the other are excluded. Left join keeps all the rows of data1 (the data on the left in the command) and excludes all samples in data2 that do not match data1. Right join keeps all the rows of data2 (the right-hand data) and excludes all samples in data1 that don't match. Full join keeps all rows and columns from both datasets. 
+**Answer:** Inner join keeps the rows that are the same in both data1 and data2 and samples that are in one file and not the other are excluded. Left join keeps all the rows of data1 (the data on the left in the command) and excludes all samples in data2 that do not match data1. 
 
 # Part 3 — Dates, summaries and ordering
 
@@ -190,11 +190,6 @@ nrow(compare_full)
 Add a `Year` column and a `Month` column to `all_data` with `mutate()` and the `lubridate` functions `year()` and `month()` (Chapter 10, *Extracting Components*).
 
 ```{r add-year}
-all_data <- all_data |> 
-    mutate(
-        Year = year(Date),
-        Month = month(Date)
-        )
 
 ```
 
@@ -204,14 +199,13 @@ Use `group_by()` and `summarise()` (Chapter 10, *summarise() + group_by()*) to c
 
 ```{r year-summary}
 
-year_summary <- group_by(all_data,Year)
-summarise(year_summary, Mean=mean(Conc, na.rm = TRUE), SD=sd(Conc, na.rm = TRUE))
+# year_summary <-
 
 ```
 
 **Question 4:** Does concentration differ between the two years? Answer in one or two sentences from the table.
 
-**Answer:** Concentration differes greatly between 2021 and 2022, with a 9.236 increase.
+**Answer:**
 
 ## 11. The five highest concentrations
 
