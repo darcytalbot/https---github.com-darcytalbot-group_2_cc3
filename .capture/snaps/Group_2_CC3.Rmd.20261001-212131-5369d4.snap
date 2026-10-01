@@ -302,10 +302,8 @@ ggplot(aes(x=micro_PC1, y=micro_PC2), data=all_data) +
     geom_point(aes(colour=Conc)) +
     facet_wrap(~Year) +
     labs(
-        title = "Principal Component Scores of Patient Gut Microbiome",
-        x = "Principal Component Score 1",
-        y = "Principal Component Score 2",
-    ) + theme_classic()
+        title = ""
+    )
 
 
 ```

@@ -207,8 +207,6 @@ Use `group_by()` and `summarise()` (Chapter 10, *summarise() + group_by()*) to c
 year_summary <- group_by(all_data,Year)
 summarise(year_summary, Mean=mean(Conc, na.rm = TRUE), SD=sd(Conc, na.rm = TRUE))
 
-print(year_summary)
-
 ```
 
 **Question 4:** Does concentration differ between the two years? Answer in one or two sentences from the table.
@@ -272,23 +270,16 @@ Each `ID` was sampled once in each year. Starting from `all_data`, `select()` on
 ```{r pivot-wider}
 
 wide_conc <- all_data |> 
-    select(ID,Year,Conc) |> 
-        pivot_wider(
-            names_from=Year,
-            values_from = Conc
-            )
-
-wide_conc <- wide_conc |> 
-    mutate(wide_conc, Change = `2022` - `2021`)
-
-sum(wide_conc$Change > 0, na.rm = TRUE)
-sum(is.na(wide_conc$Change))
+    select(
+        ID,Year,Conc
+    ) |> 
+        pivot_wider(val)
 
 ```
 
 **Question 5:** How many IDs have a higher concentration in the second year than in the first, and how many have `NA` for the change? Why are there NAs?
 
-**Answer:** 19 IDs have a higher concentration in the second year than the first. 6 have NA for the change. This is because either the 2021 or the 2022 data is NA. 
+**Answer:**
 
 # Part 5 — Test the hypothesis visually
 
@@ -297,16 +288,6 @@ sum(is.na(wide_conc$Change))
 Use `ggplot()` to plot `PC1` on the x-axis and `PC2` on the y-axis for **one** of the two measurement sets, with `colour = Conc` so that concentration is shown by colour, and `facet_wrap()` by `Year`. Include `theme_classic()`, axis labels and a title (Chapter 4 and Chapter 7). Repeat for the other measurement set if it helps you answer Question 6. A few points will be **grey**: those are samples with no concentration value (`Conc` is `NA` because they were not in `Dataset1.csv`), so no colour can be assigned. Ignore them when you answer Question 6, or drop them first with `filter(!is.na(Conc))`.
 
 ```{r pc-scatter}
-
-ggplot(aes(x=micro_PC1, y=micro_PC2), data=all_data) +
-    geom_point(aes(colour=Conc)) +
-    facet_wrap(~Year) +
-    labs(
-        title = "Principal Component Scores of Patient Gut Microbiome",
-        x = "Principal Component Score 1",
-        y = "Principal Component Score 2",
-    ) + theme_classic()
-
 
 ```
 
