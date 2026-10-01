@@ -132,7 +132,7 @@ data2 <- data2 |>
 
 class(data3$Date)
 data3 <- data3 |> 
-    mutate(Date = ymd(Date))
+    mutate(Date = ymd())
 ```
 
 # Part 2 — Join the files

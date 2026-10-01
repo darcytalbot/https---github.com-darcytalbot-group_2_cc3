@@ -123,16 +123,6 @@ Check `class()` of the `Date` column in each of the three objects. If any of the
 ```{r fix-dates}
 class(data1$Date)
 data1 <- data1 |> 
-    mutate(Date = ymd(Date))
-
-
-class(data2$Date)
-data2 <- data2 |> 
-    mutate(Date = ymd(Date))
-
-class(data3$Date)
-data3 <- data3 |> 
-    mutate(Date = ymd(Date))
 ```
 
 # Part 2 — Join the files
